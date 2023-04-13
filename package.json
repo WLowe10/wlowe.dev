@@ -1,0 +1,53 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "portfolio",
+  "author": "Wesley Lowe",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^4.5.14",
+    "@fontsource/nunito-sans": "^4.5.10",
+    "@fontsource/satisfy": "^4.5.6",
+    "@fontsource/ubuntu": "^4.5.11",
+    "@rooks/use-outside-click": "^4.11.2",
+    "@types/node": "18.15.3",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "framer-motion": "^10.6.1",
+    "gatsby": "^5.8.1",
+    "gatsby-plugin-alias-imports": "^1.0.5",
+    "gatsby-plugin-image": "^3.8.0",
+    "gatsby-plugin-jss": "^5.8.0",
+    "gatsby-plugin-sharp": "^5.8.1",
+    "gatsby-plugin-sitemap": "^6.8.0",
+    "gatsby-source-filesystem": "^5.8.0",
+    "gatsby-transformer-sharp": "^5.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-feather": "^2.0.10",
+    "react-jss": "^10.10.0",
+    "react-portal": "^4.2.2",
+    "react-responsive": "^9.0.2",
+    "react-use-measure": "^2.1.1",
+    "reset-css": "^5.0.1",
+    "typescript": "5.0.2",
+    "use-timer": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "typescript": "^5.0.4"
+  }
+}
