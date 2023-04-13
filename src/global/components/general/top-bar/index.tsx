@@ -27,7 +27,7 @@ export const TopBar = () => {
     `);
 
     const flag = getImage(data.flag);
-    const path = window.location.pathname.toLowerCase();
+    // const path = window.location.pathname.toLowerCase();
 
     return (
         <div className={classes.topBar}>
@@ -43,7 +43,8 @@ export const TopBar = () => {
                         <Menu color={Theme.fontColors.primary}/>
                     ) : (
                         RouteList.map((route, index) => {
-                            const selected = path.includes(route.name.toLowerCase());
+                            // const selected = path.includes(route.name.toLowerCase());
+                            const selected = false;
 
                             return (
                                 <Link to={route.path} className={selected ? classes.navElementActive : classes.navElement} key={index}>
