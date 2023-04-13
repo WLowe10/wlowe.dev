@@ -27,7 +27,7 @@ export const TopBar = () => {
     `);
 
     const flag = getImage(data.flag);
-    // const location = router.asPath;
+    const path = window.location.pathname.toLowerCase();
 
     return (
         <div className={classes.topBar}>
@@ -43,8 +43,15 @@ export const TopBar = () => {
                         <Menu color={Theme.fontColors.primary}/>
                     ) : (
                         RouteList.map((route, index) => {
-                            // if (route.path == RouteTypes.Contact) return <a href={route.path} key={index}><Mail color={location == route.path ? Theme.fontColors.secondary : Theme.accents.grey} /></a>
-                            return <Link to={route.path} style={{backgroundColor: "white"}} className={classes.navElement} key={index} />
+                            const selected = path.includes(route.name.toLowerCase());
+
+                            return (
+                                <Link to={route.path} className={selected ? classes.navElementActive : classes.navElement} key={index}>
+                                    {
+                                        route.name
+                                    }
+                                </Link>
+                            )
                             // return <a className={location == route.path ? classes.navElementActive : classes.navElement} href={route.path} key={index}>{route.name}</a>
                         })
                     )

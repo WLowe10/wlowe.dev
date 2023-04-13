@@ -48,6 +48,7 @@
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
+    "@types/react-portal": "^4.0.4",
     "typescript": "^5.0.4"
   }
 }
