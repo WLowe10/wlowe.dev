@@ -29,7 +29,7 @@ const useGlobalStyles = createUseStyles({
 }, { link: true })
 
 
-export const PageTemplate = ({ children }: Props) => {
+export const PageLayout = ({ children }: Props) => {
     useGlobalStyles();
 
     return (

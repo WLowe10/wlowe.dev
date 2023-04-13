@@ -1,13 +1,13 @@
 import { ProjectCard } from "./components";
 import { useStyles } from "./styles";
-import { PageTemplate } from "@global/components/templates";
+import { PageLayout } from "@global/layouts";
 import { projectsData } from "@global/data/projects";
 
 export const Projects = () => {
     const classes = useStyles();
 
     return (
-        <PageTemplate>
+        <PageLayout>
             <div className={classes.projectsContainer}>
                 {
                     projectsData.map((p, idx) => (
@@ -21,6 +21,6 @@ export const Projects = () => {
                     ))
                 }
             </div>
-        </PageTemplate>
+        </PageLayout>
     )
 };

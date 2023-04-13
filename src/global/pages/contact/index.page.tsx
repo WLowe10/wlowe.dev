@@ -1,15 +1,15 @@
 import { useStyles } from "./styles";
-import { PageTemplate } from "@global/components/templates";
+import { PageLayout } from "@global/layouts";
 
 const Contact = () => {
     const classes = useStyles();
 
     return (
-        <PageTemplate>
+        <PageLayout>
             <div>
                 
             </div>
-        </PageTemplate>
+        </PageLayout>
     )
 };
 

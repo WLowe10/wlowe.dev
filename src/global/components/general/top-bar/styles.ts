@@ -11,18 +11,6 @@ export const useStyles = createUseStyles({
             bottom: 50
         }
     },
-    presence: {
-        display: "flex",
-        flexDirection: "row",
-        justifyContent: "space-between",
-        alignItems: "center",
-        paddingBottom: 32
-    },
-    presenceText: {
-        color: Theme.fontColors.secondary,
-        fontFamily: Families.NunitoSans,
-        fontWeight: Weights.NunitoSans[600]
-    },
     navContainer: {
         display: "flex",
         flexDirection: "row",
