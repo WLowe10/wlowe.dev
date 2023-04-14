@@ -13,37 +13,37 @@ export const skillGroupOther: SkillGroupType = {
                 {
                     name: "Docker",
                     description: "test",
-                    image: <DockerIcon />,
+                    image: <DockerIcon width={"100%"} height={"100%"}/>,
                     github: "https://github.com/docker"
                 },
                 {
                     name: "NGINX",
                     description: "test",
-                    image: <NginxIcon />,
+                    image: <NginxIcon width={"100%"} height={"100%"}/>,
                     github: "https://github.com/nginx"
                 },
                 {
                     name: "Postgres",
                     description: "test",
-                    image: <PostgresqlIcon />,
+                    image: <PostgresqlIcon width={"100%"} height={"100%"}/>,
                     github: "https://github.com/postgres"
                 },
                 {
                     name: "MongoDB",
                     description: "test",
-                    image: <MongodbIcon />,
+                    image: <MongodbIcon width={"100%"} height={"100%"}/>,
                     github: "https://github.com/mongodb",
                 },
                 {
                     name: "Git",
                     description: "test",
-                    image: <GitScmIcon />,
+                    image: <GitScmIcon width={"100%"} height={"100%"}/>,
                     github: "https://github.com/git"
                 },
                 {
                     name: "Vim",
                     description: "test",
-                    image: <VimIcon />
+                    image: <VimIcon width={"100%"} height={"100%"}/>
                 }
             ]
         },

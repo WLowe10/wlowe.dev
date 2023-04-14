@@ -17,28 +17,28 @@ export const skillGroupTS: SkillGroupType = {
             skills: [
                 {
                     name: "React",
-                    image: <ReactjsIcon />,
+                    image: <ReactjsIcon width={"100%"} height={"100%"} />,
                     description: "I use React JS to build dynamic and interactive user interfaces for my web applications. By utilizing JSX syntax and components, I am able to create reusable and modular code. With React, I am able to build high-performing and responsive web experiences.",
                     github: "https://github.com/facebook/react",
                     npm: "https://www.npmjs.com/package/react"
                 },
                 {
                     name: "NextJS",
-                    image: <NextjsIcon />,
+                    image: <NextjsIcon width={"100%"} height={"100%"}/>,
                     description: "I use React JS to build dynamic and interactive user interfaces for my web applications. By utilizing JSX syntax and components, I am able to create reusable and modular code. With React, I am able to build high-performing and responsive web experiences.",
                     github: "https://github.com/vercel/next.js/",
                     npm: "https://www.npmjs.com/package/next"
                 },
                 {
                     name: "Framer Motion",
-                    image: <FramerIcon />,
+                    image: <FramerIcon width={"100%"} height={"100%"}/>,
                     description: "I use React JS to build dynamic and interactive user interfaces for my web applications. By utilizing JSX syntax and components, I am able to create reusable and modular code. With React, I am able to build high-performing and responsive web experiences.",
                     github: "https://github.com/framer/motion",
                     npm: "https://www.npmjs.com/package/framer-motion"
                 },
                 {
                     name: "React-JSS",
-                    image: <JssIcon fill={"white"} color={"white"} />,
+                    image: <JssIcon fill={"white"} color={"white"} width={"100%"} height={"100%"} />,
                     description: "I use react-jss to easily style my React components in a dynamic and organized way. This allows me to keep my styles modular and maintainable, while still being able to bring my designs to life with the flexibility of JSS.",
                     github: "https://github.com/cssinjs/jss",
                     npm: "https://www.npmjs.com/package/react-jss"
@@ -58,7 +58,7 @@ export const skillGroupTS: SkillGroupType = {
             skills: [
                 {
                     name: "Electron",
-                    image: <ElectronjsIcon />,
+                    image: <ElectronjsIcon width={"100%"} height={"100%"}/>,
                     description: "I use React Native to build cross-platform mobile applications. It's a framework that allows me to use React to build mobile apps for both iOS and Android. I can write code once and reuse it across different platforms, while still being able to access native features of the device.",
                     github: "https://github.com/electron/electron",
                     npm: "https://www.npmjs.com/package/electron"
@@ -71,7 +71,7 @@ export const skillGroupTS: SkillGroupType = {
             skills: [
                 {
                     name: "React Native",
-                    image: <ReactjsIcon />,
+                    image: <ReactjsIcon width={"100%"} height={"100%"}/>,
                     description: "I use React Native to build cross-platform mobile applications. It's a framework that allows me to use React to build mobile apps for both iOS and Android. I can write code once and reuse it across different platforms, while still being able to access native features of the device",
                     github: "https://github.com/facebook/react-native",
                     npm: "https://www.npmjs.com/package/react-native"
@@ -90,14 +90,14 @@ export const skillGroupTS: SkillGroupType = {
             skills: [
                 {
                     name: "Express",
-                    image: <ExpressjsIcon fill={Theme.fontColors.primary}/>,
+                    image: <ExpressjsIcon fill={Theme.fontColors.primary} width={"100%"} height={"100%"}/>,
                     description: "I use Express JS to build the server-side of my web applications. It's a minimal and flexible Node.js web application framework that allows me to set up routes, handle HTTP requests and responses, and define middleware to add extra functionality to my server. Express is always my go to choice for building robust and efficient backends for my web projects.",
                     github: "https://github.com/expressjs/express",
                     npm: "https://www.npmjs.com/package/express"
                 },
                 {
                     name: "Nest",
-                    image: <NestjsIcon />,
+                    image: <NestjsIcon width={"100%"} height={"100%"}/>,
                     description: "I use Express JS to build the server-side of my web applications. It's a minimal and flexible Node.js web application framework that allows me to set up routes, handle HTTP requests and responses, and define middleware to add extra functionality to my server. Express is always my go to choice for building robust and efficient backends for my web projects.",
                     github: "https://github.com/nestjs/nest",
                     npm: "https://www.npmjs.com/package/@nestjs/core"
@@ -117,14 +117,14 @@ export const skillGroupTS: SkillGroupType = {
             skills: [
                 {
                     name: "Zod",
-                    image: <ZodIcon />,
+                    image: <ZodIcon width={"100%"} height={"100%"}/>,
                     description: "I use Zod for input validation in my TypeScript projects. It's a lightweight and powerful validation library that allows me to define validation schema and constraints for my inputs.",
                     github: "https://github.com/colinhacks/zod",
                     npm: "https://www.npmjs.com/package/zod"
                 },
                 {
                     name: "StripeJS",
-                    image: <StripeIcon />,
+                    image: <StripeIcon width={"100%"} height={"100%"}/>,
                     description: "I use Stripe.js to handle payments in my web applications. It's a powerful and secure JavaScript library that allows me to easily integrate Stripe's payment system into my project.",
                     github: "https://github.com/stripe/stripe-js",
                     npm: "https://www.npmjs.com/package/@stripe/stripe-js"

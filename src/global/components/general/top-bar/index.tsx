@@ -40,7 +40,10 @@ export const TopBar = () => {
                 </h1>
                 {
                     isMobile ? (
-                        <Menu color={Theme.fontColors.primary}/>
+                        <>
+                            <Menu color={Theme.fontColors.primary}/>
+                            <MobileMenu open={true}/>
+                        </>
                     ) : (
                         RouteList.map((route, index) => {
                             // const selected = path.includes(route.name.toLowerCase());
