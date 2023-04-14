@@ -102,6 +102,7 @@
       "@global/*": ["./global/*"],
       "@pages/*": ["./pages/*"],
       "@root/*": ["./root/*"],
+      "@services/*": ["./services/*"],
     }
   },
   "include": ["./src/**/*", "./gatsby-node.ts", "./gatsby-config.ts", "./plugins/**/*"]

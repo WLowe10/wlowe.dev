@@ -1,6 +1,6 @@
 import { ProjectCard } from "./components";
 import { useStyles } from "./styles";
-import { PageLayout } from "@global/layouts";
+import { PageLayout } from "@global/components/layouts";
 import { projectsData } from "@global/data/projects";
 
 export const Projects = () => {

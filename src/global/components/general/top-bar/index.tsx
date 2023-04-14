@@ -3,14 +3,16 @@ import { Mail, Grid, Menu } from "react-feather";
 import { Theme } from "@global/constants/theme";
 import { RouteTypes, RouteList } from "@global/constants/routes";
 import { useMediaQuery } from "react-responsive";
-import { MobileMenu } from "../mobile-menu";
+import { MobileMenu } from "../../../../services/mobile/components/mobile-menu";
 import { motion } from "framer-motion";
 import { StaticImage, getImage } from "gatsby-plugin-image";
 import { useStaticQuery, graphql } from "gatsby";
 import { PresenceBar } from "../presence-bar";
 import { Link } from "gatsby";
+import { useMobile } from "@services/mobile/hooks";
 
 export const TopBar = () => {
+    const { open } = useMobile();
     const classes = useStyles();
     const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
 
@@ -40,10 +42,7 @@ export const TopBar = () => {
                 </h1>
                 {
                     isMobile ? (
-                        <>
-                            <Menu color={Theme.fontColors.primary}/>
-                            {/* <MobileMenu open={true}/> */}
-                        </>
+                        <Menu color={Theme.fontColors.primary} onClick={open}/>
                     ) : (
                         RouteList.map((route, index) => {
                             // const selected = path.includes(route.name.toLowerCase());

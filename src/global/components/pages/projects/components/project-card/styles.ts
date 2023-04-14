@@ -7,7 +7,7 @@ export const useStyles = createUseStyles({
         backgroundColor: Theme.accents.dark,
         borderRadius: 10,
         padding: "1rem",
-        // minWidth: "15rem",
+        minWidth: "15rem",
         borderWidth: 1,
         border: "solid",
         cursor: "pointer",

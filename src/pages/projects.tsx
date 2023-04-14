@@ -1,3 +1,3 @@
-import { Projects } from "@global/pages/projects";
+import { Projects } from "@global/components/pages/projects";
 
 export default Projects;

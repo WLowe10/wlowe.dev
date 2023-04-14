@@ -29,7 +29,9 @@ const config: GatsbyConfig = {
       resolve: "gatsby-plugin-alias-imports",
       options: {
         alias: {
-          "@global": path.resolve(__dirname, "./src/global")
+          "@global": path.resolve(__dirname, "./src/global"),
+          "@root": path.resolve(__dirname, "./src/root"),
+          "@services": path.resolve(__dirname, "./src/services"),
         },
         extensions: []
       }

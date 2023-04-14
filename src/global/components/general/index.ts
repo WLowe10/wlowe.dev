@@ -7,7 +7,6 @@ import { NpmLink } from "./npm-link";
 import { GithubLink } from "./github-link";
 import { Footer } from "./footer";
 import { Connection } from "./connection";
-import { MobileMenu } from "./mobile-menu";
 
 export {
     TopBar,
@@ -19,5 +18,4 @@ export {
     GithubLink,
     Footer,
     Connection,
-    MobileMenu
 }

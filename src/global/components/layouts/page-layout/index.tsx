@@ -4,6 +4,7 @@ import { TopBar } from "@global/components/general";
 import { Footer } from "@global/components/general";
 import { createUseStyles } from "react-jss";
 import { Theme } from "@global/constants/theme";
+import { Providers } from "@root/providers";
 
 type Props = {
     children: ReactNode
@@ -33,6 +34,7 @@ export const PageLayout = ({ children }: Props) => {
     useGlobalStyles();
 
     return (
+      <Providers>
         <FullFlex style={{justifyContent: "center"}}>
             <div style={{maxWidth: "56rem", display: "flex", flexDirection: "column", padding: "2rem", flex: 1, justifyContent: "space-between"}}>
                 <div style={{display: "flex", flexDirection: "column"}}>
@@ -44,5 +46,6 @@ export const PageLayout = ({ children }: Props) => {
                 <Footer />
             </div>
         </FullFlex>
+      </Providers>
     )
 }

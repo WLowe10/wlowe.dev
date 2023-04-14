@@ -1,3 +1,3 @@
-import { Tech } from "@global/pages/tech";
+import { Tech } from "@global/components/pages/tech";
 
 export default Tech;

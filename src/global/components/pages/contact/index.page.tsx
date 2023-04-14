@@ -1,5 +1,5 @@
 import { useStyles } from "./styles";
-import { PageLayout } from "@global/layouts";
+import { PageLayout } from "@global/components/layouts";
 
 const Contact = () => {
     const classes = useStyles();

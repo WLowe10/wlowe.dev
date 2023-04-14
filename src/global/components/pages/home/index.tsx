@@ -2,7 +2,7 @@ import { useStyles } from "./styles";
 import { TextField, HoverableText } from "@global/components/general";
 import { DateAnnotation } from "./components";
 import { BestSongs, Gym } from "./sections";
-import { PageLayout } from "@global/layouts";
+import { PageLayout } from "@global/components/layouts";
 
 export const Home = () => {
     const classes = useStyles();
