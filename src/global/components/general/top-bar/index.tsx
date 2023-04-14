@@ -42,7 +42,7 @@ export const TopBar = () => {
                     isMobile ? (
                         <>
                             <Menu color={Theme.fontColors.primary}/>
-                            <MobileMenu open={true}/>
+                            {/* <MobileMenu open={true}/> */}
                         </>
                     ) : (
                         RouteList.map((route, index) => {
