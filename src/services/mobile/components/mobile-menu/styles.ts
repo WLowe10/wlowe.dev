@@ -1,7 +1,6 @@
 import { createUseStyles } from "react-jss";
 import { Theme } from "@global/constants/theme";
-import { Families, Weights } from "@global/constants/fonts";
-import { m } from "framer-motion";
+import { Families, Sizes, Weights } from "@global/constants/fonts";
 
 export const useStyles = createUseStyles({
     menu: {
@@ -9,11 +8,22 @@ export const useStyles = createUseStyles({
         zIndex: 99,
         top: 0, 
         left: 0,
-        width: "100vh",
+        right: 0,
         height: "100vh",
         backgroundColor: Theme.accents.dark,
-        // overflow: "hidden",
         padding: "2rem"
+    },
+    menuHeader: {
+        fontFamily: Families.SaiyanSans,
+        color: Theme.fontColors.primary,
+        fontSize: Sizes.Large,
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between",
+        margin: {
+            bottom: "2rem"
+        }
     },
     navLinks: {
         display: "flex",
@@ -26,7 +36,7 @@ export const useStyles = createUseStyles({
         flexDirection: "row",
         gap: "1rem",
         textDecoration: "none",
-        // justifyContent: "space-around",
+        justifyContent: "space-between",
         alignItems: "center"
     },
     navText: {

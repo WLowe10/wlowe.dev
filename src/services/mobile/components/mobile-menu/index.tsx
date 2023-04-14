@@ -5,6 +5,9 @@ import { useMobile } from "@services/mobile/hooks";
 import { useLockBodyScroll } from "@global/hooks";
 import { Link } from "gatsby";
 import { Theme } from "@global/constants/theme";
+import { BackButton } from "@global/components/general";
+import { motion } from "framer-motion";
+import { variants } from "./variants.animation";
 
 export const MobileMenu = () => {
     const classes = useStyles();
@@ -14,7 +17,11 @@ export const MobileMenu = () => {
 
     return (
         <Portal>
-            <nav className={classes.menu}>
+            <motion.nav className={classes.menu} initial={variants.closed} animate={variants.opened} exit={variants.closed}>
+                <div className={classes.menuHeader}>
+                    test
+                    <BackButton variant={"exit"} onClick={close} />
+                </div>
                 <div className={classes.navLinks}>
                     <Link to={"/"} onClick={close} className={classes.navLink}>
                         <Home color={Theme.fontColors.primary} size={"2rem"} />
@@ -35,7 +42,7 @@ export const MobileMenu = () => {
                         </p>
                     </Link>
                 </div>
-            </nav>
+            </motion.nav>
         </Portal>
     )
 };

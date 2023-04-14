@@ -16,14 +16,6 @@ export const useStyles = createUseStyles({
         // justifyContent: "space-between",
         gap: 10,
     },
-    backButton: {
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        padding: 5,
-        backgroundColor: Theme.accents.darker,
-        borderRadius: 100
-    },
     credentials: {
         display: "flex", 
         flexDirection: "row",

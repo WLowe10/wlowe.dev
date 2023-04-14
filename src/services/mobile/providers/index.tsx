@@ -2,6 +2,7 @@ import { MobileMenu } from "../components";
 import { useState } from "react";
 import { MobileContext } from "../context";
 import type { ReactNode } from "react";
+import { AnimatePresence } from "framer-motion";
 
 export const MobileProvider = ({ children }: { children: ReactNode }) => {
     const [navOpen, setNavOpen] = useState(false);
@@ -19,9 +20,11 @@ export const MobileProvider = ({ children }: { children: ReactNode }) => {
             open: handleOpen, 
             close: handleClose
         }}>
-        {
-            navOpen && <MobileMenu />
-        }
+        <AnimatePresence>
+            {
+                navOpen && <MobileMenu />
+            }
+        </AnimatePresence>
         {
             children
         }

@@ -7,6 +7,7 @@ import { NpmLink } from "./npm-link";
 import { GithubLink } from "./github-link";
 import { Footer } from "./footer";
 import { Connection } from "./connection";
+import { BackButton } from "./back-button";
 
 export {
     TopBar,
@@ -18,4 +19,5 @@ export {
     GithubLink,
     Footer,
     Connection,
+    BackButton
 }

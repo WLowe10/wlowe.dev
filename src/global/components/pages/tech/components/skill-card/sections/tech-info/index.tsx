@@ -2,8 +2,7 @@ import { Theme } from "@global/constants/theme";
 import { useStyles } from "./styles"
 import { ChevronLeft } from "react-feather";
 import { TechDetailsType } from "@global/types";
-import { GithubLink, NpmLink, Pill } from "@global/components/general";
-import { Gallery } from "./gallery";
+import { BackButton, GithubLink, NpmLink, Pill } from "@global/components/general";
 import { useMediaQuery } from "react-responsive";
 
 type Props = {
@@ -19,9 +18,7 @@ export const TechInfo = ({details, clearTech}: Props) => {
     return (
         <div className={classes.techInfo}>
             <div className={classes.header}>
-               <button className={classes.backButton} onClick={clearTech}>
-                    <ChevronLeft color={Theme.fontColors.primary}/>
-                </button>
+                <BackButton onClick={clearTech}/>
                 <div className={classes.credentials}>
                     <h1 className={classes.techInfoName}>
                         {
@@ -38,11 +35,6 @@ export const TechInfo = ({details, clearTech}: Props) => {
                     }
                 </p>                
             </div>
-
-            <div className={classes.galleryContainer}>
-                <Gallery />
-            </div>
-
             <div className={classes.footer}>
                 {
                     github && <GithubLink href={github} />
