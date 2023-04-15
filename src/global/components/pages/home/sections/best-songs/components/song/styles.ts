@@ -12,7 +12,8 @@ export const useStyles = createUseStyles({
         borderRadius: 8,
         marginRight: 10,
         height: "5rem", 
-        width: "5rem"
+        width: "5rem",
+        minWidth: "5rem"
     },
     songInfo: {
         display: "flex",

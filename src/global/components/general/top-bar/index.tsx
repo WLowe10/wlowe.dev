@@ -1,12 +1,8 @@
 import { useStyles } from "./styles";
-import { Mail, Grid, Menu } from "react-feather";
+import { Menu } from "react-feather";
 import { Theme } from "@global/constants/theme";
-import { RouteTypes, RouteList } from "@global/constants/routes";
+import { RouteList } from "@global/constants/routes";
 import { useMediaQuery } from "react-responsive";
-import { MobileMenu } from "../../../../services/mobile/components/mobile-menu";
-import { motion } from "framer-motion";
-import { StaticImage, getImage } from "gatsby-plugin-image";
-import { useStaticQuery, graphql } from "gatsby";
 import { PresenceBar } from "../presence-bar";
 import { Link } from "gatsby";
 import { useMobile } from "@services/mobile/hooks";
@@ -15,20 +11,6 @@ export const TopBar = () => {
     const { open } = useMobile();
     const classes = useStyles();
     const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
-
-    const data = useStaticQuery(graphql`
-        query {
-            flag: file(relativePath: { eq: "usa_flag.gif" }) {
-                childImageSharp {
-                    fluid {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-        }
-    `);
-
-    const flag = getImage(data.flag);
     // const path = window.location.pathname.toLowerCase();
 
     return (

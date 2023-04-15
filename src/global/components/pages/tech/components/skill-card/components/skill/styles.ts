@@ -29,7 +29,8 @@ export const useStyles = createUseStyles({
         backgroundColor: Theme.accents.darker,
         marginRight: 10,
         height: 24,
-        width: 24
+        width: 24,
+        minWidth: 24
     },
     arrowContainer: {
         flex: 1,

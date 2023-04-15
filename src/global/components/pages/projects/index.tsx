@@ -1,3 +1,4 @@
+import { FullFlex } from "@global/components/containers";
 import { ProjectCard } from "./components";
 import { useStyles } from "./styles";
 import { PageLayout } from "@global/components/layouts";
@@ -7,20 +8,18 @@ export const Projects = () => {
     const classes = useStyles();
 
     return (
-        <PageLayout>
-            <div className={classes.projectsContainer}>
-                {
-                    projectsData.map((p, idx) => (
-                        <ProjectCard 
-                            name={p.name}
-                            link={p.link}
-                            open={p.open}
-                            description={p.description}
-                            key={idx}
-                        />
-                    ))
-                }
-            </div>
-        </PageLayout>
+        <div className={classes.projectsContainer}>
+            {
+                projectsData.map((p, idx) => (
+                    <ProjectCard 
+                        name={p.name}
+                        link={p.link}
+                        open={p.open}
+                        description={p.description}
+                        key={idx}
+                    />
+                ))
+            }
+        </div>
     )
 };

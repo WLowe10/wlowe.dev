@@ -1,7 +1,7 @@
 import { useStyles } from "./styles";
 
 type Props = {
-    time: any
+    time: string
 }
 
 export const DateAnnotation = ({time}: Props) => {
@@ -9,7 +9,7 @@ export const DateAnnotation = ({time}: Props) => {
 
     return (
         <p className={classes.dateAnnotation}>
-            Wes Lowe - 12/12/12
+            Wes Lowe - {time}
         </p>
     )
 };  

@@ -1,6 +1,7 @@
-import { createUseStyles } from 'react-jss'
+import { Theme } from "@global/constants/theme";
+import { createUseStyles } from "react-jss";
 
-const useGlobalStyles = createUseStyles({
+export const useGlobalStyles = createUseStyles({
   "@global": {
     "body": {
       overflow: "overlay",
@@ -19,14 +20,3 @@ const useGlobalStyles = createUseStyles({
   }
 }, { link: true })
 
-exports.wrapPageElement = ({ element, props }) => {
-    useGlobalStyles();
-
-    return (
-        <>
-        {
-            element
-        }
-        </>
-    )
-}

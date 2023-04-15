@@ -14,7 +14,7 @@ export const Song = ({thumbnail, title, artist}: Props) => {
     return (
         <div className={classes.song}>
             <div className={classes.thumbnail}>
-                <img src={thumbnail} style={{borderRadius: 8, height: "100%", width: "100%"}} alt={"oops"}/>
+                <img src={thumbnail} style={{borderRadius: 8, height: "100%", width: "100%"}} alt={"song thumbnail"}/>
             </div>
             <div className={classes.songInfo}>
                 <h1 className={classes.songTitle}>

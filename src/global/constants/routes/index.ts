@@ -18,8 +18,4 @@ export const RouteList = [
         name: "Projects",
         path: "/projects"
     },
-    {
-        name: "Contact",
-        path: "/contact"
-    }
 ]
