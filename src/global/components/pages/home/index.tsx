@@ -4,6 +4,7 @@ import { DateAnnotation } from "./components";
 import { BestSongs, Gym } from "./sections";
 import { PageLayout } from "@global/components/layouts";
 import { FullFlex } from "@global/components/containers";
+import { useGlobalStyles } from "@global/styles";
 
 export const Home = () => {
     const classes = useStyles();

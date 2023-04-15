@@ -13,7 +13,8 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "preload-fonts": "gatsby-preload-fonts"
   },
   "dependencies": {
     "@fontsource/inter": "^4.5.14",
@@ -29,6 +30,7 @@
     "gatsby-plugin-alias-imports": "^1.0.5",
     "gatsby-plugin-image": "^3.8.0",
     "gatsby-plugin-jss": "^5.8.0",
+    "gatsby-plugin-preload-fonts": "^4.8.0",
     "gatsby-plugin-sharp": "^5.8.1",
     "gatsby-plugin-sitemap": "^6.8.0",
     "gatsby-source-filesystem": "^5.8.0",
