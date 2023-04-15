@@ -9,7 +9,6 @@ type Props = {
 };
 
 export const Song = ({thumbnail, title, artist}: Props) => {
-    const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
     const classes = useStyles();
 
     return (
