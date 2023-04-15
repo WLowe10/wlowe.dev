@@ -27,17 +27,13 @@ export const TopBar = () => {
                         <Menu color={Theme.fontColors.primary} onClick={open}/>
                     ) : (
                         RouteList.map((route, index) => {
-                            // const selected = path.includes(route.name.toLowerCase());
-                            const selected = false;
-
                             return (
-                                <Link to={route.path} className={selected ? classes.navElementActive : classes.navElement} key={index}>
+                                <Link to={route.path} className={classes.navElement} activeClassName={classes.navElementActive} key={index}>
                                     {
                                         route.name
                                     }
                                 </Link>
                             )
-                            // return <a className={location == route.path ? classes.navElementActive : classes.navElement} href={route.path} key={index}>{route.name}</a>
                         })
                     )
                 }

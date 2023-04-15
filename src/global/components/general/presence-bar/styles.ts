@@ -9,10 +9,10 @@ export const useStyles = createUseStyles({
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
-        paddingBottom: 32
+        marginBottom: 10
     },
     presenceText: {
-        color: Theme.fontColors.secondary,
+        color: Theme.accents.grey,
         fontFamily: Families.NunitoSans,
         fontWeight: Weights.NunitoSans[600]
     },

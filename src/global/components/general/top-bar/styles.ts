@@ -31,7 +31,7 @@ export const useStyles = createUseStyles({
     navElementActive: {
         fontFamily: Families.NunitoSans,
         fontWeight: Weights.NunitoSans[700],
-        color: Theme.fontColors.secondary,
+        color: Theme.fontColors.primary,
         textDecoration: "none"
     }
 })

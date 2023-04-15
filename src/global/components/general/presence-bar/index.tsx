@@ -1,6 +1,8 @@
 import { useStyles } from "./styles";
 import { motion } from "framer-motion";
 import { useLocalTime } from "@global/hooks";
+import { StaticImage } from "gatsby-plugin-image";
+import usFlag from "@global/assets/images/usa_flag.gif";
 
 export const PresenceBar = () => {
     const classes = useStyles();
@@ -11,9 +13,7 @@ export const PresenceBar = () => {
             <div style={{display: "flex", alignItems: "center", gap: 10}}>
                 {/* <Image src={usflagGif} height={24} alt={"united states"}/>                     */}
                 {/* <StaticImage src={usFlag} alt={"US-FLAG"} /> */}
-                <p className={classes.presenceText}>
-                    United States
-                </p>
+                <img src={usFlag} height={24} />
             </div>
             <div style={{display: "flex", alignItems: "center", gap: 10}}>
                 <motion.p initial={{opacity: 0}} animate={{opacity: 1}} className={classes.presenceText}>
