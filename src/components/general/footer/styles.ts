@@ -4,7 +4,7 @@ import { createUseStyles } from "react-jss";
 
 export const useStyles = createUseStyles({
     footer: {
-        paddingTop: "5rem"
+        paddingTop: "5rem",
     },
     content: {
         padding: "2rem",

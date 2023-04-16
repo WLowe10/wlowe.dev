@@ -14,8 +14,8 @@ export const PageLayout = ({ children }: Props) => {
   return (
     <FullFlex style={{justifyContent: "center"}}>
       <div style={{maxWidth: "56rem", display: "flex", flexDirection: "column", padding: "2rem", flex: 1, justifyContent: "space-between"}}>
-          <div style={{display: "flex", flexDirection: "column"}}>
-            <TopBar />
+          <div style={{display: "flex", flexDirection: "column", alignItems: "flex-start"}}>
+          <TopBar />
               {
                   children
               }

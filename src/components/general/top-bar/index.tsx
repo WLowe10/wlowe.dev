@@ -1,7 +1,7 @@
 import { useStyles } from "./styles";
 import { Menu } from "react-feather";
 import { Theme } from "@global/constants/theme";
-import { RouteList } from "@global/constants/routes";
+import { RouteList, RouteTypes } from "@global/constants/routes";
 import { useMediaQuery } from "react-responsive";
 import { PresenceBar } from "../presence-bar";
 import { useMobile } from "@services/mobile/hooks";
@@ -14,14 +14,14 @@ export const TopBar = () => {
     // const path = window.location.pathname.toLowerCase();
 
     return (
-        <div className={classes.topBar}>
+        <nav className={classes.topBar}>
             <div className={classes.presence}>
                 <PresenceBar />
             </div>
             <div className={classes.navContainer}>
-                <h1 className={classes.title}>
+                <Link className={classes.title} to={RouteTypes.Home}>
                     wes lowe
-                </h1>
+                </Link>
                 <div className={classes.mobile}>
                     <Menu color={Theme.fontColors.primary} onClick={open}/>
                 </div>
@@ -39,6 +39,6 @@ export const TopBar = () => {
                 }
                 </div>
             </div>
-        </div>
+        </nav>
     )
 };

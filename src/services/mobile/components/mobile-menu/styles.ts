@@ -20,7 +20,7 @@ export const useStyles = createUseStyles({
         display: "flex",
         flexDirection: "row",
         alignItems: "center",
-        justifyContent: "space-between",
+        justifyContent: "center",
         margin: {
             bottom: "2rem"
         }

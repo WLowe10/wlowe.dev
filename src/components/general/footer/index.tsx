@@ -1,6 +1,6 @@
 import { useStyles } from "./styles";
 import { Connection } from "../connection";
-import { Feather, Linkedin, Mail, Twitter } from "react-feather";
+import { Feather, GitHub, Linkedin, Mail, Twitter } from "react-feather";
 import { Theme } from "@global/constants/theme";
 import { motion } from "framer-motion";
 
@@ -31,9 +31,10 @@ export const Footer = () => {
                 </div>
 
                 <div className={classes.connections}>
+                    <Connection href={"https://github.com/WLowe10"} display={"WLowe10"} icon={<GitHub color={Theme.accents.blue}/>}/>
                     <Connection href={"https://twitter.com/wes_loowe"} display={"wes_loowe"} icon={<Twitter color={Theme.accents.blue}/>}/>
-                    <Connection href={"mailto:wesley.lowe@yahoo.com"} display={"wesley.lowe@yahoo.com"} icon={<Mail color={Theme.accents.blue}/>}/>
                     <Connection href={"https://www.linkedin.com/in/wes-lowe-299919251/"} display={"Wes Lowe"} icon={<Linkedin color={Theme.accents.blue}/>}/>
+                    <Connection href={"mailto:wesley.lowe@yahoo.com"} display={"wesley.lowe@yahoo.com"} icon={<Mail color={Theme.accents.blue}/>}/>
                     <Connection href={"resume.pdf"} display={"Resume"} icon={<Feather color={Theme.accents.blue}/>}/>
                 </div>
             </div>

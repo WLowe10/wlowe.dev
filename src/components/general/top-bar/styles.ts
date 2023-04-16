@@ -31,6 +31,7 @@ export const useStyles = createUseStyles({
         fontFamily: Families.SaiyanSans,
         color: Theme.fontColors.primary,
         fontSize: Sizes.ExtraLarge,
+        textDecoration: "none"
     },
     navElement: {
         fontFamily: Families.NunitoSans,

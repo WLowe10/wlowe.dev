@@ -17,3 +17,4 @@ export { default as TypeormIcon } from "./TypeormIcon";
 export { default as TypescriptlangIcon } from "./TypescriptlangIcon";
 export { default as VimIcon } from "./VimIcon";
 export { default as ZodIcon } from "./ZodIcon";
+export { default as GatsbyIcon } from "./GatsbyIcon";
