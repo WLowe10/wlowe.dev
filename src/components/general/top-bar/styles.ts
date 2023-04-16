@@ -11,6 +11,16 @@ export const useStyles = createUseStyles({
             bottom: 50
         }
     },
+    presence: {
+
+    },
+    mobile: {
+        display: "none"
+    }, 
+    navLinks: {
+        display: "flex",
+        gap: "2rem"
+    },
     navContainer: {
         display: "flex",
         flexDirection: "row",
@@ -33,5 +43,16 @@ export const useStyles = createUseStyles({
         fontWeight: Weights.NunitoSans[700],
         color: Theme.fontColors.primary,
         textDecoration: "none"
+    },
+    "@media (max-width: 768px)": {
+        presence: {
+            display: "none"
+        },
+        navLinks: {
+            display: "none"
+        },
+        mobile: {
+            display: "flex"
+        }
     }
 })
