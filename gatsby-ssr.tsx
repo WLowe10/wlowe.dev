@@ -1,14 +1,14 @@
 import React from "react";
 import { PageLayout } from "./src/components/layouts";
-import { Providers } from "./src/root/providers";
+import { Root } from "./src/root";
 
 export const wrapRootElement = ({ element, props }) => {
     return (
-        <Providers>
+        <Root>
             {
                 element
             }
-        </Providers>
+        </Root>
     )
 }
 

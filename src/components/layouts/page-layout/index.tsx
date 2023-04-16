@@ -9,7 +9,7 @@ type Props = {
 };
 
 export const PageLayout = ({ children }: Props) => {
-  useGlobalStyles() //!fix global styles. should not be done in here
+  useGlobalStyles() 
 
   return (
     <FullFlex style={{justifyContent: "center"}}>

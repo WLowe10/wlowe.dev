@@ -1,5 +1,5 @@
 import React from "react";
-import { Providers } from "./src/root/providers";
+import { Root } from "./src/root";
 import { PageLayout } from "./src/components/layouts";
 
 import "reset-css";
@@ -13,11 +13,11 @@ import "@fontsource/satisfy/400.css";
 
 export const wrapRootElement = ({ element, props }) => {
     return (
-        <Providers>
+        <Root>
             {
                 element
             }
-        </Providers>
+        </Root>
     )
 }
 
