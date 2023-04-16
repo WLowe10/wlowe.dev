@@ -2,7 +2,7 @@ import { Theme } from "@global/constants/theme";
 import { useStyles } from "./styles"
 import { ChevronLeft } from "react-feather";
 import { TechDetailsType } from "@global/types";
-import { BackButton, GithubLink, NpmLink, Pill } from "@global/components/general";
+import { BackButton, GithubLink, NpmLink, Pill } from "@components/general";
 import { useMediaQuery } from "react-responsive";
 
 type Props = {

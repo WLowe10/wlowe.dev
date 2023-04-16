@@ -104,6 +104,7 @@
       "@root/*": ["./root/*"],
       "@services/*": ["./services/*"],
       "@seo/*": ["./seo/*"],
+      "@components/*": ["./components/*"],
     }
   },
   "include": ["./src/**/*", "./gatsby-node.ts", "./gatsby-config.ts", "./plugins/**/*"]

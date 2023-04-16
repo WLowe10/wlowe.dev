@@ -1,4 +1,4 @@
-import { ElectronjsIcon } from "@global/components/icons";
+import { ElectronjsIcon } from "@components/icons";
 
 export const projectsData = [
     {

@@ -1,5 +1,5 @@
 import React from "react";
-import { PageLayout } from "./src/global/components/layouts";
+import { PageLayout } from "./src/components/layouts";
 import { Providers } from "./src/root/providers";
 
 export const wrapRootElement = ({ element, props }) => {

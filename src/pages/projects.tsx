@@ -1,4 +1,4 @@
-import { Projects } from "@global/components/pages/projects";
+import { Projects } from "@components/pages/projects";
 import { SEO } from "@seo/index";
 
 export const Head = () => {

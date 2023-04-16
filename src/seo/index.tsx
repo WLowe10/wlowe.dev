@@ -1,4 +1,4 @@
-import { useMetadata } from "@global/hooks";
+import { useMetadata } from "@global/hooks/index";
 
 type Props = {
     title?: string

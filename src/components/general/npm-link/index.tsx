@@ -1,4 +1,4 @@
-import { NpmjsIcon } from "@global/components/icons"
+import { NpmjsIcon } from "@components/icons"
 
 type Props = {
     href: string

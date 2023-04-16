@@ -34,6 +34,7 @@ const config: GatsbyConfig = {
           "@root": path.resolve(__dirname, "./src/root"),
           "@services": path.resolve(__dirname, "./src/services"),
           "@seo": path.resolve(__dirname, "./src/seo"),
+          "@components": path.resolve(__dirname, "./src/components"),
         },
         extensions: []
       }

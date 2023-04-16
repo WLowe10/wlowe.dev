@@ -1,4 +1,4 @@
-import { Tech } from "@global/components/pages/tech";
+import { Tech } from "@components/pages/tech";
 import { SEO } from "@seo/index";
 
 export const Head = () => {

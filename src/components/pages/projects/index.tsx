@@ -1,7 +1,7 @@
-import { FullFlex } from "@global/components/containers";
+import { FullFlex } from "@components/containers";
 import { ProjectCard } from "./components";
 import { useStyles } from "./styles";
-import { PageLayout } from "@global/components/layouts";
+import { PageLayout } from "@components/layouts";
 import { projectsData } from "@global/data/projects";
 
 export const Projects = () => {

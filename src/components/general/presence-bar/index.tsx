@@ -1,6 +1,6 @@
 import { useStyles } from "./styles";
 import { motion } from "framer-motion";
-import { useLocalTime } from "@global/hooks";
+import { useLocalTime } from "@global/hooks/index";
 import { StaticImage } from "gatsby-plugin-image";
 import usFlag from "@global/assets/images/usa_flag.gif";
 

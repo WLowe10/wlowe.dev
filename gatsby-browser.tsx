@@ -1,6 +1,6 @@
 import React from "react";
 import { Providers } from "./src/root/providers";
-import { PageLayout } from "./src/global/components/layouts";
+import { PageLayout } from "./src/components/layouts";
 
 import "reset-css";
 import "@global/assets/fonts/saiyan-sans/font.css";

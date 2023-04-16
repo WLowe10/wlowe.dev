@@ -1,4 +1,4 @@
-import { GithubIcon } from "@global/components/icons"
+import { GithubIcon } from "@components/icons"
 
 type Props = {
     href: string

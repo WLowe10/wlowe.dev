@@ -1,5 +1,5 @@
 import { useStyles } from "./styles";
-import { TextField } from "@global/components/general";
+import { TextField } from "@components/general";
 import { DateAnnotation } from "./components";
 import { BestSongs, Gym } from "./sections";
 

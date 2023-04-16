@@ -1,6 +1,6 @@
 import { Theme } from "@global/constants/theme";
 import { SkillGroupType } from "@global/types";
-import { TypescriptlangIcon, ReactjsIcon, ExpressjsIcon, NestjsIcon, TypeormIcon, StripeIcon, JssIcon, ZodIcon, ElectronjsIcon, FramerIcon, NextjsIcon } from "@global/components/icons";
+import { TypescriptlangIcon, ReactjsIcon, ExpressjsIcon, NestjsIcon, TypeormIcon, StripeIcon, JssIcon, ZodIcon, ElectronjsIcon, FramerIcon, NextjsIcon } from "@components/icons";
 // import zustand from "@global/assets/images/zustand.png";
 // import Image from "next/image";
 

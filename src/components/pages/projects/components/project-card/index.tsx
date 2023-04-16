@@ -1,5 +1,5 @@
 import { useStyles } from "./styles";
-import { GithubIcon } from "@global/components/icons";
+import { GithubIcon } from "@components/icons";
 import { motion } from "framer-motion";
 
 type Props = {

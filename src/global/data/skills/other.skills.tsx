@@ -1,6 +1,6 @@
 import { Theme } from "@global/constants/theme";
 import { SkillGroupType } from "@global/types";
-import { DockerIcon, NginxIcon, GitScmIcon, PostgresqlIcon, VimIcon, MongodbIcon } from "@global/components/icons";
+import { DockerIcon, NginxIcon, GitScmIcon, PostgresqlIcon, VimIcon, MongodbIcon } from "@components/icons";
 
 export const skillGroupOther: SkillGroupType = {
     name: "Other",

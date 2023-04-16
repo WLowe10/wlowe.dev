@@ -1,6 +1,6 @@
-import { FullFlex } from "@global/components/containers";
-import { TopBar } from "@global/components/general";
-import { Footer } from "@global/components/general";
+import { FullFlex } from "@components/containers";
+import { TopBar } from "@components/general";
+import { Footer } from "@components/general";
 import { useGlobalStyles } from "@global/styles";
 import type { ReactNode } from "react"
 
