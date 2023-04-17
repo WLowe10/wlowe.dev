@@ -12,8 +12,8 @@ import "@fontsource/ubuntu/400.css";
 import "@fontsource/satisfy/400.css";
 
 export const wrapRootElement = ({ element, props }) => {
-    const ssStyles = document.getElementById('server-side-jss')
-    ssStyles?.remove();
+    // const ssStyles = document.getElementById('server-side-jss')
+    // ssStyles?.remove();
 
     return (
         <Root>

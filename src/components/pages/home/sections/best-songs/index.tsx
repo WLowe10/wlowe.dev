@@ -1,14 +1,10 @@
 import { useStyles } from "./styles";
 import { Song } from "./components";
-import { AboutSection } from "../../components";
-import { Music } from "react-feather";
-import { Theme } from "@global/constants/theme";
-
 import BHOTR from "@global/assets/images/BHOTR.png";
 import responsibility from "@global/assets/images/responsibility.png";
 import shire from "@global/assets/images/shire.png";
 import hotel from "@global/assets/images/hotelcalifornia.png"
-import { useMediaQuery } from "react-responsive";
+import { AboutSection } from "../../components";
 
 const songs = [
     {
@@ -35,18 +31,14 @@ const songs = [
 
 export const BestSongs = () => {
     const classes = useStyles();
-    const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
 
     return (
-        <div className={classes.bestSongs}>
-            <h1 className={classes.header}>
-                My Favorite Songs 
-            </h1>
-            <div className={classes.songContainer} style={{display: isMobile ? "flex" : "grid" }}>
+        <AboutSection title={"My Favorite Songs"}>
+            <div className={classes.songContainer}>
                 {
                     songs.map((song, index) => <Song thumbnail={song.thumbnail} key={index} title={song.title} artist={song.artist}/>)
                 }
             </div>
-        </div>
+        </AboutSection>
     )
 };

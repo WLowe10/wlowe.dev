@@ -16,8 +16,8 @@ export const useStyles = createUseStyles({
     },
     songContainer: {
         display: "flex",
-        flexDirection: "row",
-        flexWrap: "wrap",
+        flexDirection: "column",
+        // flexWrap: "wrap",
         gap: "2rem"
     }
 })
