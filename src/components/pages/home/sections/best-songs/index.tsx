@@ -38,17 +38,15 @@ export const BestSongs = () => {
     const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
 
     return (
-        // <AboutSection title={"🎺 Top 5 Songs of Human History"}>
-            <div className={classes.bestSongs}>
-                <h1 className={classes.header}>
-                   My Favorite Songs 
-                </h1>
-                <div className={classes.songContainer} style={{display: isMobile ? "flex" : "grid" }}>
-                    {
-                        songs.map((song, index) => <Song thumbnail={song.thumbnail} key={index} title={song.title} artist={song.artist}/>)
-                    }
-                </div>
+        <div className={classes.bestSongs}>
+            <h1 className={classes.header}>
+                My Favorite Songs 
+            </h1>
+            <div className={classes.songContainer} style={{display: isMobile ? "flex" : "grid" }}>
+                {
+                    songs.map((song, index) => <Song thumbnail={song.thumbnail} key={index} title={song.title} artist={song.artist}/>)
+                }
             </div>
-        // </AboutSection>
+        </div>
     )
 };

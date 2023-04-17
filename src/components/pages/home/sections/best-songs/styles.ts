@@ -15,9 +15,9 @@ export const useStyles = createUseStyles({
         fontWeight: Weights.NunitoSans[700]
     },
     songContainer: {
-        display: "grid",
-        gridTemplateColumns: "1fr 1fr",
-        flexDirection: "column",
+        display: "flex",
+        flexDirection: "row",
+        flexWrap: "wrap",
         gap: "2rem"
     }
 })

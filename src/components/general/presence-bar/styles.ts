@@ -9,7 +9,8 @@ export const useStyles = createUseStyles({
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
-        marginBottom: 10
+        marginBottom: 10,
+        flex: 1
     },
     presenceText: {
         color: Theme.accents.grey,

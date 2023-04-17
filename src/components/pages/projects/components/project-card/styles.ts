@@ -4,14 +4,18 @@ import { createUseStyles } from "react-jss";
 
 export const useStyles = createUseStyles({
     projectCard: {
+        display: "flex",
+        flexDirection: "column",
         backgroundColor: Theme.accents.dark,
         borderRadius: 10,
         padding: "1rem",
         minWidth: "15rem",
         borderWidth: 1,
-        border: "solid",
+        borderColor: Theme.accents.dark,
+        borderStyle: "solid",
         cursor: "pointer",
-        flex: 1
+        textDecoration: "none",
+        flex: 1,
     },
     cardHeader: {
         display: "flex",
@@ -32,6 +36,21 @@ export const useStyles = createUseStyles({
         color: Theme.fontColors.secondary,
         fontFamily: Families.NunitoSans,
         fontWeight: Weights.NunitoSans[400],
-        lineHeight: 1.5
+        lineHeight: 1.5,
+        flex: 1,
+    },
+    techContainer: {
+        marginTop: "1rem",
+        display: "flex",
+        flexDirection: "row",
+        flexWrap: "wrap",
+        gap: ".5rem",
+        padding: "1rem",
+        borderRadius: 8,
+        backgroundColor: Theme.accents.darker
+    },
+    techIcon: {
+        height: 20,
+        width: 20
     }
 });

@@ -24,9 +24,10 @@ export const useStyles = createUseStyles({
         }
     },
     separatorText: {
-        background: "-webkit-linear-gradient(#415EDA, #333)",
-        "-webkit-background-clip": "text",
-        "-webkit-text-fill-color": "transparent",
+        // background: "-webkit-linear-gradient(#415EDA, #333)",
+        // "-webkit-background-clip": "text",
+        // "-webkit-text-fill-color": "transparent",
+        color: Theme.fontColors.primary,
         fontFamily: Families.Satisfy,
         fontSize: Sizes.Medium,
         padding: {

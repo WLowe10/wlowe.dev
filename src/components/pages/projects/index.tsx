@@ -12,10 +12,9 @@ export const Projects = () => {
             {
                 projectsData.map((p, idx) => (
                     <ProjectCard 
-                        name={p.name}
-                        link={p.link}
-                        open={p.open}
-                        description={p.description}
+                        {
+                            ...p
+                        }
                         key={idx}
                     />
                 ))

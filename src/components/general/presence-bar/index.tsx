@@ -11,8 +11,6 @@ export const PresenceBar = () => {
     return (
         <div className={classes.presence}>
             <div style={{display: "flex", alignItems: "center", gap: 10}}>
-                {/* <Image src={usflagGif} height={24} alt={"united states"}/>                     */}
-                {/* <StaticImage src={usFlag} alt={"US-FLAG"} /> */}
                 <img src={usFlag} height={24} />
             </div>
             <div style={{display: "flex", alignItems: "center", gap: 10}}>

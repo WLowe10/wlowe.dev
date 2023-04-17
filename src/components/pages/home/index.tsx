@@ -15,7 +15,7 @@ export const Home = () => {
 
             <div className={classes.separator}>
                 <p className={classes.separatorText}>
-                    My Interests
+                    About Me
                 </p>
             </div> 
 

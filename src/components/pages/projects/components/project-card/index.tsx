@@ -1,15 +1,29 @@
 import { useStyles } from "./styles";
-import { GithubIcon } from "@components/icons";
+import { FramerIcon, GatsbyIcon, GithubIcon, JssIcon, NestjsIcon, PostgresqlIcon, TypescriptlangIcon } from "@components/icons";
 import { motion } from "framer-motion";
+import { ElectronjsIcon } from "@components/icons";
+import { ReactjsIcon } from "@components/icons";
 
 type Props = {
     name: string,
     description: string,
-    link: string,
     open: boolean,
+    link?: string,
+    tech: Array<string>
 }
 
-export const ProjectCard = ({ name, description, open, link }: Props) => {
+const techIconsMap: Record<string, any> = {
+    typescript: TypescriptlangIcon,
+    react: ReactjsIcon,
+    electron: ElectronjsIcon,
+    gatsby: GatsbyIcon,
+    jss: JssIcon,
+    nest: NestjsIcon,
+    postgres: PostgresqlIcon,
+    framer: FramerIcon
+}
+
+export const ProjectCard = ({ name, description, open, link, tech }: Props) => {
     const classes = useStyles(); 
 
     return (
@@ -31,8 +45,18 @@ export const ProjectCard = ({ name, description, open, link }: Props) => {
                     }
                 </p>
             </div>
-            <div>
+            <div className={classes.techContainer}>
+            {
+                tech.map(t => {
+                    const Icon = techIconsMap[t];
 
+                    return (
+                        <div className={classes.techIcon}>
+                            <Icon height={"100%"} width={"100%"}/>
+                        </div>
+                    )
+                })
+            }
             </div>
         </motion.div>
     )

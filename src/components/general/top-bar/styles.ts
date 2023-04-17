@@ -12,7 +12,7 @@ export const useStyles = createUseStyles({
         }
     },
     presence: {
-
+        display: "flex",
     },
     mobile: {
         display: "none"
@@ -52,8 +52,11 @@ export const useStyles = createUseStyles({
         navLinks: {
             display: "none"
         },
+        navElement: {
+            display: "none"
+        },
         mobile: {
             display: "flex"
-        }
+        },
     }
 })
