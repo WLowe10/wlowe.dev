@@ -11,12 +11,4 @@ export const Head = () => {
     )
 };
 
-export default () => {
-    return (
-        <MobileProvider>
-        <PageLayout>
-            <Tech />
-        </PageLayout>
-        </MobileProvider>
-    )
-};
+export default Tech;
