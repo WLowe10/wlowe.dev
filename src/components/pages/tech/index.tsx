@@ -1,6 +1,5 @@
 import { useStyles } from "./styles";
 import { SkillCard } from "./components";
-import { useMediaQuery } from "react-responsive";
 import { skillGroupOther, skillGroupTS } from "@global/data/skills";
 import { PageLayout } from "@components/layouts";
 import { FullFlex } from "@components/containers";
