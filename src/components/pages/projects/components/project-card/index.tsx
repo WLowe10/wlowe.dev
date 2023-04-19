@@ -27,7 +27,7 @@ export const ProjectCard = ({ name, description, open, link, tech }: Props) => {
     const classes = useStyles(); 
 
     return (
-        <motion.div className={classes.projectCard} whileHover={{ borderColor: "rgba(255,255,255,0.7)" }}>
+        <motion.a href={link} target={"_blank"} className={classes.projectCard} whileHover={{ borderColor: "rgba(255,255,255,0.7)" }}>
             <div className={classes.cardHeader}>
                 <h1>
                     { 
@@ -58,6 +58,6 @@ export const ProjectCard = ({ name, description, open, link, tech }: Props) => {
                 })
             }
             </div>
-        </motion.div>
+        </motion.a>
     )
 };

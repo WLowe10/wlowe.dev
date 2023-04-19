@@ -6,7 +6,6 @@ import { PageLayout } from "@components/layouts";
 import { FullFlex } from "@components/containers";
 
 export const Tech = () => {
-    const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
     const classes = useStyles();
 
     return (

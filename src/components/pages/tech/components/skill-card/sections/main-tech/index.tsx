@@ -1,8 +1,6 @@
 import { useStyles } from "./styles"; 
 import { Legend } from "../../components/legend";
-import { ReactNode, useEffect } from "react";
 import { Skill } from "../../components/skill";
-import { useMediaQuery } from "react-responsive";
 import { SkillGroupType, TechDetailsType } from "@global/types";
 
 type Props = {

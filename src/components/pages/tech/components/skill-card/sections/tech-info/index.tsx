@@ -12,7 +12,6 @@ type Props = {
 
 export const TechInfo = ({details, clearTech}: Props) => {
     const classes = useStyles();
-    const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
     const { name, pill, description, github, npm } = details;
 
     return (
@@ -29,7 +28,7 @@ export const TechInfo = ({details, clearTech}: Props) => {
                 </div>
             </div>
             <div className={classes.mainInfo}>
-                <p className={classes.description} style={{hyphens: isMobile ? "auto" : "inherit"}}>
+                <p className={classes.description}>
                     {
                         description
                     }

@@ -1,5 +1,4 @@
 import { useStyles } from "./styles";
-import { useMediaQuery } from "react-responsive";
 // import type { StaticImageData } from "next/image";
 
 type Props = {
