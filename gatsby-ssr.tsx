@@ -12,12 +12,12 @@ import { Root } from "./src/root";
 //     )
 // }
 
-export const wrapPageElement = ({ element, props }) => {
-    return (
-        <PageLayout {...props}>
-            {
-                element
-            }
-        </PageLayout>
-    )
-}
+// export const wrapPageElement = ({ element, props }) => {
+//     return (
+//         <PageLayout {...props}>
+//             {
+//                 element
+//             }
+//         </PageLayout>
+//     )
+// }
