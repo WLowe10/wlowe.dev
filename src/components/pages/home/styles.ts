@@ -24,9 +24,6 @@ export const useStyles = createUseStyles({
         }
     },
     separatorText: {
-        // background: "-webkit-linear-gradient(#415EDA, #333)",
-        // "-webkit-background-clip": "text",
-        // "-webkit-text-fill-color": "transparent",
         color: Theme.fontColors.primary,
         fontFamily: Families.Satisfy,
         fontSize: Sizes.Medium,
@@ -40,5 +37,11 @@ export const useStyles = createUseStyles({
         flexDirection: "column",
         width: "100%",
         gap: "5rem",
-    }
+    },
+    projectsContainer: {
+        display: "flex",
+        flexDirection: "column",
+        flexWrap: "wrap",
+        gap: "1rem",
+    }, 
 })

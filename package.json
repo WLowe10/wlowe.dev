@@ -43,6 +43,7 @@
     "react-portal": "^4.2.2",
     "react-responsive": "^9.0.2",
     "react-use-measure": "^2.1.1",
+    "react-youtube": "^10.1.0",
     "reset-css": "^5.0.1",
     "typescript": "5.0.2",
     "use-timer": "^2.0.1"

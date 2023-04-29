@@ -52,5 +52,17 @@ export const useStyles = createUseStyles({
     techIcon: {
         height: 20,
         width: 20
+    },
+    youtube: {
+        display: "flex",
+        flex: 1,
+        padding: "1rem",
+        justifyContent: "center",
+        alignItems: "center"
+    },
+    "@media (max-width: 768px)": {
+        // youtube: {
+        //     display: "none"
+        // }
     }
 });

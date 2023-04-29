@@ -5,31 +5,34 @@ export const projectsData = [
         name: "Sigma",
         open: true,
         link: "https://github.com/WLowe10/sigma",
-        description: `Sigma is an open source music player that uses youtube`,
+        description: `Sigma is an open source music player that uses an embedded youtube player to play audio. It is built using Electron, React, and Chakra UI.`,
+        youtube: "uGRurHaaLOw",
         tech: [
+            "typescript",
+            "react",
             "electron",
-            "react"
-        ]
-    },
-    {
-        name: "Hawk Templates",
-        open: true,
-        link: "https://github.com/WLowe10/hawk-templates",
-        description: `Hawk Templates is my string or object templating engine that allows inline javacript execution`,
-        tech: [
-            "typescript"
         ]
     },
     {
         name: "ScrapeGoat",
         open: false,
-        description: `ScrapeGoat is a user-friendly web scraping UI that allows easy data extraction and job scheduling. Perfect for businesses that need to keep up-to-date with the latest information.`,
+        description: `ScrapeGoat is a user-friendly web scraping UI that allows easy data extraction and job scheduling. Perfect for those who need to keep up-to-date with the latest information.`,
+        youtube: "v0p6DF6FApQ",
         tech: [
             "typescript",
             "react",
             "electron",
             "nest",
             "postgres"
+        ]
+    },
+    {
+        name: "Hawk Templates",
+        open: true,
+        link: "https://github.com/WLowe10/hawk-templates",
+        description: `Hawk Templates is my string templating library that allows inline javacript execution in a sandboxed environment and JSON pointers.`,
+        tech: [
+            "typescript"
         ]
     },
     {

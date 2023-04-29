@@ -3,12 +3,14 @@ import { FramerIcon, GatsbyIcon, GithubIcon, JssIcon, NestjsIcon, PostgresqlIcon
 import { motion } from "framer-motion";
 import { ElectronjsIcon } from "@components/icons";
 import { ReactjsIcon } from "@components/icons";
+import YouTubePlayer from "react-youtube";
 
 type Props = {
     name: string,
     description: string,
     open: boolean,
     link?: string,
+    youtube?: string,
     tech: Array<string>
 }
 
@@ -23,7 +25,7 @@ const techIconsMap: Record<string, any> = {
     framer: FramerIcon
 }
 
-export const ProjectCard = ({ name, description, open, link, tech }: Props) => {
+export const ProjectCard = ({ name, description, open, link, youtube, tech }: Props) => {
     const classes = useStyles(); 
 
     return (
@@ -45,13 +47,22 @@ export const ProjectCard = ({ name, description, open, link, tech }: Props) => {
                     }
                 </p>
             </div>
+            <div className={classes.youtube}>
+            {
+                youtube && (
+                    <YouTubePlayer 
+                        videoId={youtube} 
+                    />
+                )
+            }
+            </div>
             <div className={classes.techContainer}>
             {
-                tech.map(t => {
+                tech.map((t, idx) => {
                     const Icon = techIconsMap[t];
 
                     return (
-                        <div className={classes.techIcon}>
+                        <div className={classes.techIcon} key={idx}>
                             <Icon height={"100%"} width={"100%"}/>
                         </div>
                     )
