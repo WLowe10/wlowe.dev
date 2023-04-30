@@ -1,7 +1,6 @@
 export enum RouteTypes {
     Home = "/",
     Tech = "/tech",
-    Contact = "/contact",
 };
 
 export const RouteList = [

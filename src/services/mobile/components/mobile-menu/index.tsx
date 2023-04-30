@@ -34,12 +34,6 @@ export const MobileMenu = () => {
                             // Tech
                         </p>
                     </Link>
-                    <Link to={"/projects"} onClick={close} className={classes.navLink}>
-                        <Briefcase color={Theme.fontColors.primary} size={"2rem"}/>
-                        <p className={classes.navText}>
-                            // Projects
-                        </p>
-                    </Link>
                 </div>
             </motion.nav>
         </Portal>

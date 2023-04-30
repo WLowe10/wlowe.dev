@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ElectronjsIcon } from "@components/icons";
 import { ReactjsIcon } from "@components/icons";
 import YouTubePlayer from "react-youtube";
+import { Link } from "gatsby";
 
 type Props = {
     name: string,
