@@ -61,8 +61,8 @@ export const useStyles = createUseStyles({
         alignItems: "center"
     },
     "@media (max-width: 768px)": {
-        // youtube: {
-        //     display: "none"
-        // }
+        youtube: {
+            display: "none"
+        }
     }
 });
