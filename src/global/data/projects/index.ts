@@ -14,10 +14,10 @@ export const projectsData = [
         ]
     },
     {
-        name: "ScrapeGoat",
+        name: "Scrape Goat",
         open: false,
         description: `ScrapeGoat is a user-friendly web scraping UI that allows easy data extraction and job scheduling. Perfect for those who need to keep up-to-date with the latest information.`,
-        youtube: "v0p6DF6FApQ",
+        youtube: "vcE8E2fTo4A",
         tech: [
             "typescript",
             "react",
