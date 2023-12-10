@@ -1,0 +1,25 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../constants';
+import { getBlogs } from "@utils";
+import BlogLink from "../features/blog/components/BlogLink.astro";
+
+const blogs = await getBlogs();
+---
+
+<!doctype html>
+<html lang="en">
+	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	<body>
+		<main>
+			<p>
+				Wes Lowe
+			</p>	
+			{
+				blogs.map(blog => <BlogLink {...blog} />)
+			}
+		</main>
+	</body>
+</html>
