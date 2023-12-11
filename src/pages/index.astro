@@ -8,12 +8,15 @@ const blogs = await getBlogs();
 
 <Layout class="bg-slate-50">
 	<main class="px-6 mt-14 max-w-3xl mx-auto">
-		<h1 class="text-4xl font-bold mb-2">
+		<h1 class="text-4xl font-bold mb-2 lg:text-5xl">
 			Wes Lowe
 		</h1>	
 		<div class="mb-6">
 			<p class="text-lg">
-				Hey! I'm Wes, a full stack developer with a love for coding and creating elegant applications. From the origin of Typescript and constantly learning new skills, I strive to push the boundaries of what's possible. Thanks for checking out my portfolio.
+				Hey! I'm Wes, a full stack developer with a love for coding and creating elegant applications. 
+				I'm currently working on 
+				<span class="text-purple-500">Potion</span> and I've embedded an exclusive demo below!
+				Thanks for checking out my portfolio.
 			</p>
 			<span class="text-xs text-slate-500">
 				Wes Lowe -
@@ -22,7 +25,11 @@ const blogs = await getBlogs();
 				</time>
 			</span>
 		</div>
-		<div class="flex flex-col gap-2">
+
+		<h2 class="font-semibold text-lg mb-2">
+			{`${blogs.length} blog${blogs.length !== 1 ? 's' : ''}`}
+		</h2>
+		<div class="flex flex-col gap-4">
 			{
 				blogs.map(blog => <BlogLink {...blog} />)
 			}
