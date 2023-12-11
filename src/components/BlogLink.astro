@@ -1,0 +1,54 @@
+---
+import { readingTime } from "@utils";
+import type { CollectionEntry } from "astro:content";
+
+type Props = CollectionEntry<"blog">;
+
+const { data, body, slug } = Astro.props;
+---
+
+<a 
+    href={`./blogs/${slug}`}
+    class="rounded-md ring-1 ring-slate-300"
+>
+    <div class="p-3">
+        <div class="flex justify-between">
+            <h3 class="font-semibold text-lg">
+                {
+                    data.title
+                }
+            </h3>
+            <p class="text-xs text-slate-500">{`${readingTime(body)} min read`}</p>
+        </div>
+        <p class="line-clamp-2">
+            {
+                data.description
+            }
+        </p>
+        <time class="text-xs">
+            Published 1 month ago
+        </time>
+    </div>
+    {
+        data.tags && (
+            <hr class="bg-slate-200 h-px" />
+            <ul class="flex text-xs gap-2 py-2 px-3 items-center">
+                {
+                    data.tags.map(tag => (
+                        tag === "Project" ? (
+                            <li class="bg-blue-400 text-white p-1 rounded-sm">
+                                {
+                                    tag
+                                }
+                            </li>
+                        ) : (
+                            <li>
+                                {tag}
+                            </li>
+                        )
+                    ))
+                }
+            </ul>
+        )
+    }
+</div>

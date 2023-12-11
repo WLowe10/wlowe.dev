@@ -1,12 +1,17 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+const typography = require("@tailwindcss/typography");
+
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: "Manrope"
+				sans: ["Inter var", ...defaultTheme.fontFamily.sans]
 			}
 		},
 	},
-	plugins: [],
+	plugins: [
+		typography
+	],
 }

@@ -1,25 +1,30 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../constants';
+import BlogLink from "../components/BlogLink.astro";
+import Layout from '@layouts/Layout.astro';
 import { getBlogs } from "@utils";
-import BlogLink from "../features/blog/components/BlogLink.astro";
 
 const blogs = await getBlogs();
 ---
 
-<!doctype html>
-<html lang="en">
-	<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	<body>
-		<main>
-			<p>
-				Wes Lowe
-			</p>	
+<Layout class="bg-slate-50">
+	<main class="px-6 mt-14 max-w-3xl mx-auto">
+		<h1 class="text-4xl font-bold mb-2">
+			Wes Lowe
+		</h1>	
+		<div class="mb-6">
+			<p class="text-lg">
+				Hey! I'm Wes, a full stack developer with a love for coding and creating elegant applications. From the origin of Typescript and constantly learning new skills, I strive to push the boundaries of what's possible. Thanks for checking out my portfolio.
+			</p>
+			<span class="text-xs text-slate-500">
+				Wes Lowe -
+				<time>
+					12/11/2023
+				</time>
+			</span>
+		</div>
+		<div class="flex flex-col gap-2">
 			{
 				blogs.map(blog => <BlogLink {...blog} />)
 			}
-		</main>
-	</body>
-</html>
+		</div>
+</Layout>

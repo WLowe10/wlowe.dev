@@ -1,0 +1,28 @@
+---
+import { SITE_TITLE, SITE_DESCRIPTION } from "@constants";
+import BaseHead, { type Props as BaseHeadProps } from "@components/BaseHead.astro";
+import "../global.css"
+
+type Props = {
+    head?: BaseHeadProps,
+    class?: string
+};
+
+const { 
+    class: className, 
+    head,
+} = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+    <head>
+        <BaseHead 
+            title={head?.title || SITE_TITLE}
+            description={head?.description || SITE_DESCRIPTION}
+        />
+        <slot name="head" />
+    </head>
+    <body class={className}>
+        <slot />
+    </body>
+</html>

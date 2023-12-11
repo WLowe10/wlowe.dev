@@ -1,9 +1,11 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content';
-import BlogPost from '../../layouts/BlogPost.astro';
+import Layout from "@layouts/Layout.astro";
+import NavBar from "@components/NavBar.astro";
+import { Image } from "astro:assets";
+import { getCollection, type CollectionEntry } from "astro:content";
 
 export async function getStaticPaths() {
-	const posts = await getCollection('blog');
+	const posts = await getCollection("blog");
 
 	return posts.map((post) => ({
 		params: { slug: post.slug },
@@ -14,9 +16,46 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
+const { title, description, date, updatedDate, banner } = post.data;
 const { Content } = await post.render();
 ---
 
-<!-- <BlogPost {...post.data}> -->
-	<Content />
-<!-- </BlogPost> -->
+<Layout class="bg-slate-50" head={{ title, description }}>
+	<NavBar />
+	<article class="p-6 max-w-3xl mx-auto">
+		<header class="mb-2 leading-tight">
+			<time class="text-xs text-gray-400">
+				a month ago
+			</time>
+			<h1 class="text-2xl font-bold mb-4">
+				{title}
+			</h1>
+			{
+				banner && (
+					<Image
+						alt="Banner image"
+						class="rounded-md object-cover"
+						sizes="(min-width: 500px) 800px, 400px"
+						width={1600}
+						height={(1600 * 9) / 16}
+						loading="eager"
+						src={banner}
+					/>
+				)
+			}
+			<blockquote class="p-4 my-4 border-s-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800">
+				<p class="text-xl italic font-medium leading-relaxed text-gray-900 dark:text-white">
+					{
+						description
+					}
+				</p>
+			</blockquote>
+		</header>
+
+		<hr />
+
+		<main class="prose lg:prose-lg">
+			<Content />
+		</main>
+	</article>
+</Layout>
