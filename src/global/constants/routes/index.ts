@@ -1,15 +1,15 @@
 export enum RouteTypes {
-    Home = "/",
-    Tech = "/tech",
-};
+	Home = "/",
+	Tech = "/tech",
+}
 
 export const RouteList = [
-    {
-        name: "Home",
-        path: "/"
-    },
-    {
-        name: "Tech",
-        path: "/tech"
-    }
-]
+	{
+		name: "Home",
+		path: "/",
+	},
+	{
+		name: "Tech",
+		path: "/tech",
+	},
+];

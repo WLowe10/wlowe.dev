@@ -5,29 +5,25 @@ import type { ReactNode } from "react";
 import { AnimatePresence } from "framer-motion";
 
 export const MobileProvider = ({ children }: { children: ReactNode }) => {
-    const [navOpen, setNavOpen] = useState(false);
+	const [navOpen, setNavOpen] = useState(false);
 
-    const handleOpen = () => {
-        setNavOpen(true);
-    };
+	const handleOpen = () => {
+		setNavOpen(true);
+	};
 
-    const handleClose = () => {
-        setNavOpen(false);
-    };
-    
-    return (
-        <MobileContext.Provider value={{
-            open: handleOpen, 
-            close: handleClose
-        }}>
-        <AnimatePresence>
-            {
-                navOpen && <MobileMenu />
-            }
-        </AnimatePresence>
-        {
-            children
-        }
-        </MobileContext.Provider>
-    )
+	const handleClose = () => {
+		setNavOpen(false);
+	};
+
+	return (
+		<MobileContext.Provider
+			value={{
+				open: handleOpen,
+				close: handleClose,
+			}}
+		>
+			<AnimatePresence>{navOpen && <MobileMenu />}</AnimatePresence>
+			{children}
+		</MobileContext.Provider>
+	);
 };

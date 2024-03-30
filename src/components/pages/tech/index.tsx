@@ -5,12 +5,12 @@ import { PageLayout } from "@components/layouts";
 import { FullFlex } from "@components/containers";
 
 export const Tech = () => {
-    const classes = useStyles();
+	const classes = useStyles();
 
-    return (
-        <div className={classes.skillContainer}>
-            <SkillCard skillGroup={skillGroupTS}/> 
-            <SkillCard skillGroup={skillGroupOther}/> 
-        </div>
-    )
-};    
+	return (
+		<div className={classes.skillContainer}>
+			<SkillCard skillGroup={skillGroupTS} />
+			<SkillCard skillGroup={skillGroupOther} />
+		</div>
+	);
+};

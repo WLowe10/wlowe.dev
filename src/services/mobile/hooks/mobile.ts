@@ -3,5 +3,5 @@ import { MobileContext } from "../context";
 import type { MobileContextType } from "../context";
 
 export const useMobile = () => {
-    return useContext(MobileContext) as MobileContextType;
-}
+	return useContext(MobileContext) as MobileContextType;
+};

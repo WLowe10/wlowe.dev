@@ -7,33 +7,38 @@ import { useMobile } from "@services/mobile/hooks";
 import { Link } from "gatsby";
 
 export const TopBar = () => {
-    const { open } = useMobile();
-    const classes = useStyles();
+	const { open } = useMobile();
+	const classes = useStyles();
 
-    return (
-        <nav className={classes.topBar}>
-            <div className={classes.presence}>
-                <PresenceBar />
-            </div>
-            <div className={classes.navContainer}>
-                <Link className={classes.title} to={RouteTypes.Home}>
-                    wes lowe
-                </Link>
-                <Menu className={classes.mobile} color={Theme.fontColors.primary} onClick={open}/>
-                <div className={classes.navLinks}>
-                {
-                        RouteList.map((route, index) => {
-                            return (
-                                <Link to={route.path} className={classes.navElement} activeClassName={classes.navElementActive} key={index}>
-                                    {
-                                        route.name
-                                    }
-                                </Link>
-                            )
-                        })
-                }
-                </div>
-            </div>
-        </nav>
-    )
+	return (
+		<nav className={classes.topBar}>
+			<div className={classes.presence}>
+				<PresenceBar />
+			</div>
+			<div className={classes.navContainer}>
+				<Link className={classes.title} to={RouteTypes.Home}>
+					wes lowe
+				</Link>
+				<Menu
+					className={classes.mobile}
+					color={Theme.fontColors.primary}
+					onClick={open}
+				/>
+				<div className={classes.navLinks}>
+					{RouteList.map((route, index) => {
+						return (
+							<Link
+								to={route.path}
+								className={classes.navElement}
+								activeClassName={classes.navElementActive}
+								key={index}
+							>
+								{route.name}
+							</Link>
+						);
+					})}
+				</div>
+			</div>
+		</nav>
+	);
 };

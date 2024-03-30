@@ -1,15 +1,11 @@
 import { useStyles } from "./styles";
 
 type Props = {
-    time: string
-}
+	time: string;
+};
 
-export const DateAnnotation = ({time}: Props) => {
-    const classes = useStyles();
+export const DateAnnotation = ({ time }: Props) => {
+	const classes = useStyles();
 
-    return (
-        <p className={classes.dateAnnotation}>
-            Wes Lowe - {time}
-        </p>
-    )
-};  
+	return <p className={classes.dateAnnotation}>Wes Lowe - {time}</p>;
+};

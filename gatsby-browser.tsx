@@ -12,21 +12,9 @@ import "@fontsource/ubuntu/400.css";
 import "@fontsource/satisfy/400.css";
 
 export const wrapRootElement = ({ element, props }) => {
-    return (
-        <Root>
-            {
-                element
-            }
-        </Root>
-    )
-}
+	return <Root>{element}</Root>;
+};
 
 export const wrapPageElement = ({ element, props }) => {
-    return (
-        <PageLayout {...props}>
-            {
-                element
-            }
-        </PageLayout>
-    )
-}
+	return <PageLayout {...props}>{element}</PageLayout>;
+};

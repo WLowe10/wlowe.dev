@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
 export const useMounted = () => {
-    const [mounted, setMounted] = useState(false);
+	const [mounted, setMounted] = useState(false);
 
-    useEffect(() => {
-        setMounted(true)
-    }, [])
+	useEffect(() => {
+		setMounted(true);
+	}, []);
 
-    return mounted;
-}
+	return mounted;
+};

@@ -1,5 +1,3 @@
 import { PageLayout } from "./page-layout";
 
-export {
-    PageLayout
-}
+export { PageLayout };

@@ -4,11 +4,7 @@ import { SEO } from "@seo/index";
 import { MobileProvider } from "@services/mobile/providers";
 
 export const Head = () => {
-    return (
-        <SEO 
-            title={"Tech"}
-        />
-    )
+	return <SEO title={"Tech"} />;
 };
 
 export default Tech;

@@ -10,14 +10,14 @@ import { Connection } from "./connection";
 import { BackButton } from "./back-button";
 
 export {
-    TopBar,
-    TextField,
-    CollapsableCard,
-    HoverableText,
-    Pill,
-    NpmLink,
-    GithubLink,
-    Footer,
-    Connection,
-    BackButton
-}
+	TopBar,
+	TextField,
+	CollapsableCard,
+	HoverableText,
+	Pill,
+	NpmLink,
+	GithubLink,
+	Footer,
+	Connection,
+	BackButton,
+};

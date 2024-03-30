@@ -10,32 +10,37 @@ import { motion } from "framer-motion";
 import { variants } from "./variants.animation";
 
 export const MobileMenu = () => {
-    const classes = useStyles();
-    const { close } = useMobile();
+	const classes = useStyles();
+	const { close } = useMobile();
 
-    useLockBodyScroll();
+	useLockBodyScroll();
 
-    return (
-        <Portal>
-            <motion.nav className={classes.menu} initial={variants.closed} animate={variants.opened} exit={variants.closed}>
-                <div className={classes.menuHeader}>
-                    <BackButton variant={"exit"} onClick={close} />
-                </div>
-                <div className={classes.navLinks}>
-                    <Link to={"/"} onClick={close} className={classes.navLink}>
-                        <Home color={Theme.fontColors.primary} size={"2rem"} />
-                        <p className={classes.navText}>
-                            // Home
-                        </p>
-                    </Link>
-                    <Link to={"/tech"} onClick={close} className={classes.navLink}>
-                        <Cpu color={Theme.fontColors.primary} size={"2rem"}/>
-                        <p className={classes.navText}>
-                            // Tech
-                        </p>
-                    </Link>
-                </div>
-            </motion.nav>
-        </Portal>
-    )
+	return (
+		<Portal>
+			<motion.nav
+				className={classes.menu}
+				initial={variants.closed}
+				animate={variants.opened}
+				exit={variants.closed}
+			>
+				<div className={classes.menuHeader}>
+					<BackButton variant={"exit"} onClick={close} />
+				</div>
+				<div className={classes.navLinks}>
+					<Link to={"/"} onClick={close} className={classes.navLink}>
+						<Home color={Theme.fontColors.primary} size={"2rem"} />
+						<p className={classes.navText}>// Home</p>
+					</Link>
+					<Link
+						to={"/tech"}
+						onClick={close}
+						className={classes.navLink}
+					>
+						<Cpu color={Theme.fontColors.primary} size={"2rem"} />
+						<p className={classes.navText}>// Tech</p>
+					</Link>
+				</div>
+			</motion.nav>
+		</Portal>
+	);
 };

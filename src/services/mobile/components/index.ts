@@ -1,5 +1,3 @@
 import { MobileMenu } from "./mobile-menu";
 
-export {
-    MobileMenu
-}
+export { MobileMenu };

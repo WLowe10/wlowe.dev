@@ -1,5 +1,3 @@
 import { useMobile } from "./mobile";
 
-export {
-    useMobile
-}
+export { useMobile };

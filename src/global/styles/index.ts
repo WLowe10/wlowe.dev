@@ -1,5 +1,3 @@
 import { useGlobalStyles } from "./global";
 
-export {
-    useGlobalStyles
-}
+export { useGlobalStyles };
