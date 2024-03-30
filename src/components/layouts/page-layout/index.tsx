@@ -2,13 +2,9 @@ import { FullFlex } from "@components/containers";
 import { TopBar } from "@components/general";
 import { Footer } from "@components/general";
 import { useGlobalStyles } from "@global/styles";
-import type { ReactNode } from "react";
+import type { PropsWithChildren } from "react";
 
-type Props = {
-	children: ReactNode;
-};
-
-export const PageLayout = ({ children }: Props) => {
+export const PageLayout = ({ children }: PropsWithChildren) => {
 	useGlobalStyles();
 
 	return (

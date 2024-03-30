@@ -1,4 +1,4 @@
-import { useState, ReactNode, useEffect } from "react";
+import { useState } from "react";
 import { MainTech, TechInfo } from "./sections";
 import { useStyles } from "./styles";
 import { motion, AnimatePresence } from "framer-motion";

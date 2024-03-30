@@ -1,4 +1,4 @@
-import { useState, ReactNode } from "react";
+import { useState, type PropsWithChildren } from "react";
 import { useStyles } from "./styles";
 import { motion } from "framer-motion";
 import { Mail } from "react-feather";
@@ -6,7 +6,6 @@ import { Theme } from "@global/constants/theme";
 
 type Props = {
 	text: string;
-	children?: ReactNode;
 };
 
 const variants = {
@@ -26,7 +25,7 @@ const variants = {
 
 //!animation does not work when un-hoveringm there is no transition duration
 
-export const HoverableText = ({ children, text }: Props) => {
+export const HoverableText = ({ children, text }: PropsWithChildren<Props>) => {
 	const classes = useStyles();
 	//!change while hover to use state
 	return (

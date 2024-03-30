@@ -1,6 +1,6 @@
-import { MobileProvider } from "@services/mobile/providers";
-import type { ReactNode } from "react";
+import { MobileProvider } from "@features/mobile/providers";
+import type { PropsWithChildren } from "react";
 
-export const Providers = ({ children }: { children: ReactNode }) => {
+export const Providers = ({ children }: PropsWithChildren) => {
 	return <MobileProvider>{children}</MobileProvider>;
 };

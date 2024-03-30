@@ -3,7 +3,7 @@ import { Menu } from "react-feather";
 import { Theme } from "@global/constants/theme";
 import { RouteList, RouteTypes } from "@global/constants/routes";
 import { PresenceBar } from "../presence-bar";
-import { useMobile } from "@services/mobile/hooks";
+import { useMobile } from "@features/mobile/hooks";
 import { Link } from "gatsby";
 
 export const TopBar = () => {

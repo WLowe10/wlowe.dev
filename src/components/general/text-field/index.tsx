@@ -1,11 +1,7 @@
-import { ReactNode } from "react";
 import { useStyles } from "./styles";
+import type { PropsWithChildren } from "react";
 
-type Props = {
-	children: ReactNode;
-};
-
-export const TextField = ({ children }: Props) => {
+export const TextField = ({ children }: PropsWithChildren) => {
 	const classes = useStyles();
 
 	return <div className={classes.textField}>{children}</div>;

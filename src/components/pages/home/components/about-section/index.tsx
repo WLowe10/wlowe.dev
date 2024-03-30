@@ -1,13 +1,12 @@
-import { ReactNode } from "react";
 import { Music } from "react-feather";
 import { useStyles } from "./styles";
+import type { PropsWithChildren } from "react";
 
 type Props = {
-	children: ReactNode;
 	title: string;
 };
 
-export const AboutSection = ({ children, title }: Props) => {
+export const AboutSection = ({ children, title }: PropsWithChildren<Props>) => {
 	const classes = useStyles();
 
 	return (

@@ -1,6 +1,8 @@
 import path from "path";
 import type { GatsbyConfig } from "gatsby";
 
+const srcPath = path.resolve(__dirname, "./src");
+
 const config: GatsbyConfig = {
 	siteMetadata: {
 		title: `Wes Lowe`,
@@ -30,11 +32,11 @@ const config: GatsbyConfig = {
 			resolve: "gatsby-plugin-alias-imports",
 			options: {
 				alias: {
-					"@global": path.resolve(__dirname, "./src/global"),
-					"@root": path.resolve(__dirname, "./src/root"),
-					"@services": path.resolve(__dirname, "./src/services"),
-					"@seo": path.resolve(__dirname, "./src/seo"),
-					"@components": path.resolve(__dirname, "./src/components"),
+					"@global": path.resolve(srcPath, "./global"),
+					"@root": path.resolve(srcPath, "./root"),
+					"@features": path.resolve(srcPath, "./features"),
+					"@seo": path.resolve(srcPath, "./seo"),
+					"@components": path.resolve(srcPath, "./components"),
 				},
 				extensions: [],
 			},

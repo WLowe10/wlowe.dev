@@ -1,10 +1,10 @@
 import { MobileMenu } from "../components";
 import { useState } from "react";
 import { MobileContext } from "../context";
-import type { ReactNode } from "react";
 import { AnimatePresence } from "framer-motion";
+import type { PropsWithChildren } from "react";
 
-export const MobileProvider = ({ children }: { children: ReactNode }) => {
+export const MobileProvider = ({ children }: PropsWithChildren) => {
 	const [navOpen, setNavOpen] = useState(false);
 
 	const handleOpen = () => {

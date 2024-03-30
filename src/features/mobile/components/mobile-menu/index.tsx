@@ -1,7 +1,7 @@
 import { Portal } from "react-portal";
-import { Home, Cpu, Briefcase } from "react-feather";
+import { Home, Cpu } from "react-feather";
 import { useStyles } from "./styles";
-import { useMobile } from "@services/mobile/hooks";
+import { useMobile } from "@features/mobile/hooks";
 import { useLockBodyScroll } from "@global/hooks";
 import { Link } from "gatsby";
 import { Theme } from "@global/constants/theme";

@@ -1,12 +1,15 @@
-import { ReactNode, CSSProperties } from "react";
+import { CSSProperties, type PropsWithChildren } from "react";
 
 type Props = {
-	children: ReactNode;
 	style?: CSSProperties;
 	className?: string;
 };
 
-export const FullFlex = ({ children, style, className }: Props) => {
+export const FullFlex = ({
+	children,
+	style,
+	className,
+}: PropsWithChildren<Props>) => {
 	return (
 		<div
 			style={{ display: "flex", minHeight: "100vh", ...style }}

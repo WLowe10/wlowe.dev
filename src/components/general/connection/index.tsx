@@ -1,8 +1,6 @@
 import { useStyles } from "./styles";
-import { ReactNode } from "react";
 import { motion } from "framer-motion";
-import { ArrowRight } from "react-feather";
-import { Theme } from "@global/constants/theme";
+import type { ReactNode } from "react";
 
 type Props = {
 	href: string;

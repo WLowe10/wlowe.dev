@@ -1,6 +1,6 @@
 import { Providers } from "./providers";
-import type { ReactNode } from "react";
+import type { PropsWithChildren } from "react";
 
-export const Root = ({ children }: { children: ReactNode }) => {
+export const Root = ({ children }: PropsWithChildren) => {
 	return <Providers>{children}</Providers>;
 };
